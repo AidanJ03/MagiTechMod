@@ -1,0 +1,33 @@
+modLoader="javafml"
+
+loaderVersion="[24,)"
+
+[[mods]] #mandatory
+
+modId="magitechmod"
+
+version="0.1"
+
+displayName="MagiTechMod"
+
+credits="Thanks for this mod goes to Harry Talks for his tutorials" #optional
+
+authors="AidanJ03, YaBoiFast"
+
+description='''
+
+A mod incorporating both magic and tech!
+
+'''
+
+[[dependencies.magitechmod]]
+
+    modId="forge"
+
+    mandatory=true
+
+    versionRange="[24,)"
+
+    ordering="NONE"
+
+    side="BOTH"

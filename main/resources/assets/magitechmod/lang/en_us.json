@@ -1,0 +1,13 @@
+{
+	"item.magitechmod.aluminum_ingot": "Aluminum Ingot",
+	"item.magitechmod.alumentium_ingot": "Alumentium Ingot",
+	"item.magitechmod.augsteel": "Augsteel",
+	"item.magitechmod.steel": "Steel",
+	"item.magitechmod.copper_ingot": "Copper Ingot",
+	"item.magitechmod.plasma_blaster": "Plasma Blaster",
+	
+	"block.magitechmod.bauxite_ore": "Bauxite Ore",
+	"block.magitechmod.copper_ore": "Copper Ore",
+	
+	"itemGroup.magitech": "MagiTech"
+}

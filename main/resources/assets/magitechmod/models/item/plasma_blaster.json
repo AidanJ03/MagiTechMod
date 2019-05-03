@@ -1,0 +1,146 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+    "textures": {
+        "plasma_blaster": "magitechmod:items/plasma_blaster"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 12, 55, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 2, 0 ],
+            "scale": [ 0.5, 0.5, 0.5 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 1.13, 3.2, 1.13 ],
+            "scale": [ 0.68, 0.68, 0.68 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 1, -2 ],
+            "scale": [ 0.55, 0.55, 0.55 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Cube1",
+            "from": [ 7, 6, 1 ], 
+            "to": [ 9, 7, 3 ], 
+            "faces": {
+                "north": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 0, 2, 1 ] },
+                "east": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 0, 2, 1 ] },
+                "west": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 0, 2, 1 ] },
+                "up": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 0, 2, 2 ] },
+                "down": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 0, 2, 2 ] }
+            }
+        },
+        {
+            "name": "Cube2",
+            "from": [ 7, 9, 1 ], 
+            "to": [ 9, 10, 3 ], 
+            "faces": {
+                "north": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 0, 2, 1 ] },
+                "east": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 0, 2, 1 ] },
+                "west": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 0, 2, 1 ] },
+                "up": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 0, 2, 2 ] },
+                "down": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 0, 2, 2 ] }
+            }
+        },
+        {
+            "name": "Cube3",
+            "from": [ 9, 7, 1 ], 
+            "to": [ 10, 9, 3 ], 
+            "faces": {
+                "north": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 0, 1, 2 ] },
+                "east": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 0, 2, 2 ] },
+                "west": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 0, 2, 2 ] },
+                "up": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 0, 1, 2 ] },
+                "down": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 0, 1, 2 ] }
+            }
+        },
+        {
+            "name": "Cube4",
+            "from": [ 6, 7, 1 ], 
+            "to": [ 7, 9, 3 ], 
+            "faces": {
+                "north": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 0, 1, 2 ] },
+                "east": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 0, 2, 2 ] },
+                "west": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 0, 2, 2 ] },
+                "up": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 0, 1, 2 ] },
+                "down": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 0, 1, 2 ] }
+            }
+        },
+        {
+            "name": "Cube5",
+            "from": [ 6, 6, 3 ], 
+            "to": [ 10, 10, 14 ], 
+            "faces": {
+                "north": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 7, 2, 11, 6 ] },
+                "east": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 2, 11, 6 ] },
+                "south": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 7, 2, 11, 6 ] },
+                "west": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 2, 11, 6 ] },
+                "up": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 2, 11, 6 ] },
+                "down": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 2, 11, 6 ] }
+            }
+        },
+        {
+            "name": "Cube6",
+            "from": [ 7, 4, 5 ], 
+            "to": [ 9, 6, 8 ], 
+            "faces": {
+                "north": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 2, 0, 4, 2 ] },
+                "east": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 2, 0, 5, 2 ] },
+                "south": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 2, 0, 4, 2 ] },
+                "west": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 2, 0, 5, 2 ] },
+                "down": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 2, 0, 5, 2 ] }
+            }
+        },
+        {
+            "name": "Cube7",
+            "from": [ 7, 4, 12 ], 
+            "to": [ 9, 9, 15 ], 
+            "faces": {
+                "north": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 6, 2, 11 ] },
+                "east": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 6, 3, 11 ] },
+                "south": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 6, 2, 11 ] },
+                "west": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 6, 3, 11 ] },
+                "up": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 7, 2, 10 ] },
+                "down": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 7, 2, 10 ] }
+            }
+        },
+        {
+            "name": "Cube8",
+            "from": [ 7, 3, 13 ], 
+            "to": [ 9, 8, 16 ], 
+            "faces": {
+                "north": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 6, 2, 11 ] },
+                "east": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 6, 3, 11 ] },
+                "south": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 6, 2, 11 ] },
+                "west": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 6, 3, 11 ] },
+                "up": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 7, 2, 10 ] }
+            }
+        },
+        {
+            "name": "Cube9",
+            "from": [ 6, 1, 12 ], 
+            "to": [ 10, 3, 17 ], 
+            "faces": {
+                "north": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 12, 4, 14 ] },
+                "east": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 12, 5, 14 ] },
+                "south": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 12, 4, 14 ] },
+                "west": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 12, 5, 14 ] },
+                "up": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 11, 5, 15 ] },
+                "down": { "texture": "magitechmod:items/plasma_blaster", "uv": [ 0, 11, 5, 15 ] }
+            }
+        }
+    ]
+}
