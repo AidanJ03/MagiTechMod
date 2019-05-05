@@ -3,6 +3,7 @@ package aidanj03.magitechmod;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import aidanj03.magitechmod.item_groups.MagiTechItemGroup;
 import aidanj03.magitechmod.lists.BlockList;
 import aidanj03.magitechmod.lists.ItemList;
 import net.minecraft.block.Block;
@@ -19,6 +20,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+
 @Mod("magitechmod")
 
 public class MagiTechMod 
@@ -83,7 +85,6 @@ public class MagiTechMod
 				
 			logger.info("Blocks registered.");
 		}
-		
 		private static ResourceLocation location(String name)
 		{
 			return new ResourceLocation(modid, name);
