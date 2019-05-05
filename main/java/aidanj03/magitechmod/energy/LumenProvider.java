@@ -1,46 +1,51 @@
 package aidanj03.magitechmod.energy;
 
+import javax.annotation.Nullable;
+
+import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.EnumFacing;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.CapabilityInject;
 import net.minecraftforge.common.capabilities.ICapabilitySerializable;
-import net.minecraftforge.common.util.LazyOptional;
 
-public class LumenProvider implements ICapabilitySerializable<NBTBase>
-{
+public class LumenProvider implements ICapabilitySerializable<NBTTagCompound>
+{	
+	ILumens storage = new LumenStorage(1000, 1000, 1000);
+	
+	public LumenProvider appendNBT(@Nullable NBTTagCompound compound)
+	
 	@CapabilityInject(ILumens.class)
-	public static final Capability<ILumens> LUMEN_CAP = null;
+	public static final Capability<ILumens> LUMENS = null;
 	
-	private ILumens instance = LUMEN_CAP.getDefaultInstance();
+	private ILumens instance = LUMENS.getDefaultInstance();
 	
-	
-	@Override
 	public boolean hasCapability(Capability<?> capability, EnumFacing facing)
 	{
-		return capability == LUMEN_CAP;
+		return capability == LUMENS;
 	}
 	
 	@Override
-	public <T> T getcapability(Capability<T> capability, EnumFacing side)
+	public <T> T getCapability(Capability<T> capability, EnumFacing facing)
 	{
-		return capability == LUMEN_CAP ? LUMEN_CAP.<T>> (this.instance) : null;
+		return hasCapability(capability, facing) ? (T) storage : null;
+	}
+	
+	public NBTTagCompound serializeNBT()
+	{
+		NBTTagCompound compound = new NBTTagCompound();
+		compound.setTag("lumen_cap", LUMENS.writeNBT(storage, EnumFacing.DOWN));
 	}
 	
 	@Override
-	public NBTBase serializeNBT()
+	public void deserializeNBT(NBTTagCompound nbt)
 	{
-		return LUMEN_CAP.getStorage().writeNBT(LUMEN_CAP, this.instance, null);
-	}
-	
-	@Override
-	public void deserializeNBT(NBTBase nbt)
-	{
-		LUMEN_CAP.getStorage().readNBT(LUMEN_CAP, this.instance, null, nbt);
-	}
-
-	@Override
-	public <T> LazyOptional<T> getCapability(Capability<T> cap, EnumFacing side) {
-		// TODO Auto-generated method stub
-		return null;
+		if (nbt != null) 
+		{
+			NBTTagCompound nbt$lumencapability = (NBTTagCompound) nbt.getTag("lumens");
+			if (nbt$lumencapability != null)
+			{
+				LUMENS.readNBT(instance, EnumFacing.DOWN, nbt$lumencapability);
+			}
+		}
 	}
 }
