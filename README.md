@@ -1,2 +1,0 @@
-# MagiTechMod
-My first mod
